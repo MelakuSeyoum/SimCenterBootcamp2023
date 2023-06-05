@@ -2,9 +2,21 @@
 #include <stdio.h>
 #include <math.h>
 
+
 int main(int argc, char **argv) {
+<<<<<<< HEAD
   int numDivision = atoi(argv[1]);
   double delta_x = 1.0/numDivision;
+=======
+
+  if (argc != 2) {
+    printf("Usage: appName numSteps\n");
+    exit(-1);
+  }
+
+  int numSteps = atoi(argv[1]);
+  
+>>>>>>> upstream/master
   double pi   = 0;
   for (int i = 0; i<numDivision;i++){
     double x = (i*delta_x)+(delta_x/2);
