@@ -1,0 +1,10 @@
+%I_MPI_ONEAPI_ROOT%;%IFORT_COMPILER23%;
+
+
+
+"E:\Program Files (x86)\Intel\oneAPI\setvars.bat" Intel64 mod
+mpicc scatterArray.c
+
+Once compiled:
+# Frank used mpirun on Frontera, on MR PC where Intel OneAPI is installed, use mpiexec.
+mpiexec -n 4 .\Release\dotProduct.exe 10
